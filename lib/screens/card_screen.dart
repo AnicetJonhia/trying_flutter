@@ -128,7 +128,7 @@ class _CardScreenState extends State<CardScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Top row
+  
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -137,7 +137,7 @@ class _CardScreenState extends State<CardScreen> {
                 buildCard("C2", brightness),
               ],
             ),
-            // Middle row
+  
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -146,7 +146,7 @@ class _CardScreenState extends State<CardScreen> {
                 buildCard("C3", brightness),
               ],
             ),
-            // Bottom row
+          
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
