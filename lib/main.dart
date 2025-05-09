@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 import 'screens/card_screen.dart';
+import 'screens/product_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -87,7 +88,11 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int _selectedIndex = 0;
 
-  final List<Widget> _pages = const [HomeScreen(), CardScreen()];
+  final List<Widget> _pages =  [
+    HomeScreen(),
+    CardScreen(),
+    ProductScreen(),
+  ];
 
   void _onItemTapped(int index) {
     setState(() => _selectedIndex = index);
@@ -130,6 +135,11 @@ class _MainPageState extends State<MainPage> {
             icon: Icon(Icons.credit_card_outlined),
             selectedIcon: Icon(Icons.credit_card),
             label: 'Card',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.shopping_cart_outlined),
+            selectedIcon: Icon(Icons.shopping_cart),
+            label: 'Product',
           ),
         ],
       ),
